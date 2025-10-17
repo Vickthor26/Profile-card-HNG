@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <article class="profile-card" data-testid="test-profile-card">
+
+            <div class="profile-header">
+                <figure class="avatar-figure">
+                    <img src=Vico.jpg
+                         alt="Vico" 
+                         data-testid="test-user-avatar"
+                         class="Vico">
+                    <figcaption class="sr-only">Profile picture.</figcaption>
+                </figure>
+
+                <div class="profile-info-text">
+                    <header>
+                        <h2 data-testid="test-user-name">Vickthor Omeogah</h2>
+                    </header>
+                    <p class="bio" data-testid="test-user-bio">
+                    Dedicated frontend developer committed to the core principles of the web.
+                    I build testable, pixel-perfect UIs with semantic code and a strong mobile-first approach,
+                    ensuring every user has a flawlwss experience.
+                    </p>
+                    <div class="time-container">
+                        <p>Current Time (ms): <span data-testid="test-user-time"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details-section">
+                <nav class="social-links" data-testid="test-user-social-links" aria-label="User Social Media Links">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="https://github.com/vickthor26" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+                        <li><a href="https://twitter.com/omeogah32052" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+                        <li><a href="https://linkedin.com/in/omeogahvictor" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+                    </ul>
+                </nav>
+
+                <section class="hobbies-section">
+                    <h3 id="hobbies-label">Hobbies</h3>
+                    <ul aria-labelledby="hobbies-label" data-testid="test-user-hobbies">
+                        <li>Coding</li>
+                        <li>Reading</li>
+                        <li>Teaching/Mentoring</li>
+                    </ul>
+                </section>
+
+                <section class="dislikes-section">
+                    <h3 id="dislikes-label">Dislikes</h3>
+                    <ul aria-labelledby="dislikes-label" data-testid="test-user-dislikes">
+                        <li>Lack of communication</li>
+                        <li>Inefficiency</li>
+                        <li>Unrealiability</li>
+                    </ul>
+                </section>
+            </div>
+            
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
